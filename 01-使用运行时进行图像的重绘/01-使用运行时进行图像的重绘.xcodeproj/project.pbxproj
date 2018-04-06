@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		737724AA93473C23760D3C81 /* Pods_01_____________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304CD53A639949F6D3F08B8A /* Pods_01_____________.framework */; };
+		93FF67BD1D73F3AF0054B15F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF67BC1D73F3AF0054B15F /* main.m */; };
+		93FF67C01D73F3AF0054B15F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF67BF1D73F3AF0054B15F /* AppDelegate.m */; };
+		93FF67C31D73F3AF0054B15F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF67C21D73F3AF0054B15F /* ViewController.m */; };
+		93FF67C61D73F3AF0054B15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FF67C41D73F3AF0054B15F /* Main.storyboard */; };
+		93FF67C81D73F3AF0054B15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FF67C71D73F3AF0054B15F /* Assets.xcassets */; };
+		93FF67CB1D73F3AF0054B15F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FF67C91D73F3AF0054B15F /* LaunchScreen.storyboard */; };
+		93FF67D41D73F4140054B15F /* UIImageView+Hack.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF67D31D73F4140054B15F /* UIImageView+Hack.m */; };
+		93FF67D71D7412BF0054B15F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF67D61D7412BF0054B15F /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304CD53A639949F6D3F08B8A /* Pods_01_____________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_01_____________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		481D71B2B7A166584E518FC4 /* Pods-01-使用运行时进行图像的重绘.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-使用运行时进行图像的重绘.release.xcconfig"; path = "Pods/Target Support Files/Pods-01-使用运行时进行图像的重绘/Pods-01-使用运行时进行图像的重绘.release.xcconfig"; sourceTree = "<group>"; };
+		93FF67B81D73F3AF0054B15F /* 01-使用运行时进行图像的重绘.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-使用运行时进行图像的重绘.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FF67BC1D73F3AF0054B15F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93FF67BE1D73F3AF0054B15F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93FF67BF1D73F3AF0054B15F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93FF67C11D73F3AF0054B15F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93FF67C21D73F3AF0054B15F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93FF67C51D73F3AF0054B15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93FF67C71D73F3AF0054B15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93FF67CA1D73F3AF0054B15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93FF67CC1D73F3AF0054B15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FF67D21D73F4140054B15F /* UIImageView+Hack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Hack.h"; sourceTree = "<group>"; };
+		93FF67D31D73F4140054B15F /* UIImageView+Hack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Hack.m"; sourceTree = "<group>"; };
+		93FF67D51D7412BF0054B15F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		93FF67D61D7412BF0054B15F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DE149FFA59FD6A48AA400149 /* Pods-01-使用运行时进行图像的重绘.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-使用运行时进行图像的重绘.debug.xcconfig"; path = "Pods/Target Support Files/Pods-01-使用运行时进行图像的重绘/Pods-01-使用运行时进行图像的重绘.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93FF67B51D73F3AF0054B15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737724AA93473C23760D3C81 /* Pods_01_____________.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2635D094400A1379D4B6B135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				304CD53A639949F6D3F08B8A /* Pods_01_____________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DAF7BA8D63F2D81DD1A8AE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE149FFA59FD6A48AA400149 /* Pods-01-使用运行时进行图像的重绘.debug.xcconfig */,
+				481D71B2B7A166584E518FC4 /* Pods-01-使用运行时进行图像的重绘.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93FF67AF1D73F3AF0054B15F = {
+			isa = PBXGroup;
+			children = (
+				93FF67BA1D73F3AF0054B15F /* 01-使用运行时进行图像的重绘 */,
+				93FF67B91D73F3AF0054B15F /* Products */,
+				8DAF7BA8D63F2D81DD1A8AE7 /* Pods */,
+				2635D094400A1379D4B6B135 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93FF67B91D73F3AF0054B15F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93FF67B81D73F3AF0054B15F /* 01-使用运行时进行图像的重绘.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93FF67BA1D73F3AF0054B15F /* 01-使用运行时进行图像的重绘 */ = {
+			isa = PBXGroup;
+			children = (
+				93FF67BE1D73F3AF0054B15F /* AppDelegate.h */,
+				93FF67BF1D73F3AF0054B15F /* AppDelegate.m */,
+				93FF67C11D73F3AF0054B15F /* ViewController.h */,
+				93FF67D21D73F4140054B15F /* UIImageView+Hack.h */,
+				93FF67D31D73F4140054B15F /* UIImageView+Hack.m */,
+				93FF67C21D73F3AF0054B15F /* ViewController.m */,
+				93FF67D51D7412BF0054B15F /* Person.h */,
+				93FF67D61D7412BF0054B15F /* Person.m */,
+				93FF67C41D73F3AF0054B15F /* Main.storyboard */,
+				93FF67C71D73F3AF0054B15F /* Assets.xcassets */,
+				93FF67C91D73F3AF0054B15F /* LaunchScreen.storyboard */,
+				93FF67CC1D73F3AF0054B15F /* Info.plist */,
+				93FF67BB1D73F3AF0054B15F /* Supporting Files */,
+			);
+			path = "01-使用运行时进行图像的重绘";
+			sourceTree = "<group>";
+		};
+		93FF67BB1D73F3AF0054B15F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93FF67BC1D73F3AF0054B15F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93FF67B71D73F3AF0054B15F /* 01-使用运行时进行图像的重绘 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93FF67CF1D73F3AF0054B15F /* Build configuration list for PBXNativeTarget "01-使用运行时进行图像的重绘" */;
+			buildPhases = (
+				CC8725A372DB0EA3F7157FEE /* [CP] Check Pods Manifest.lock */,
+				93FF67B41D73F3AF0054B15F /* Sources */,
+				93FF67B51D73F3AF0054B15F /* Frameworks */,
+				93FF67B61D73F3AF0054B15F /* Resources */,
+				91D64FDD9890CCB7177E6096 /* [CP] Embed Pods Frameworks */,
+				2D5C6922F927F58EBC4AC588 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-使用运行时进行图像的重绘";
+			productName = "01-使用运行时进行图像的重绘";
+			productReference = 93FF67B81D73F3AF0054B15F /* 01-使用运行时进行图像的重绘.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93FF67B01D73F3AF0054B15F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = rujianbin;
+				TargetAttributes = {
+					93FF67B71D73F3AF0054B15F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 93FF67B31D73F3AF0054B15F /* Build configuration list for PBXProject "01-使用运行时进行图像的重绘" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93FF67AF1D73F3AF0054B15F;
+			productRefGroup = 93FF67B91D73F3AF0054B15F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93FF67B71D73F3AF0054B15F /* 01-使用运行时进行图像的重绘 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93FF67B61D73F3AF0054B15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FF67CB1D73F3AF0054B15F /* LaunchScreen.storyboard in Resources */,
+				93FF67C81D73F3AF0054B15F /* Assets.xcassets in Resources */,
+				93FF67C61D73F3AF0054B15F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D5C6922F927F58EBC4AC588 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-01-使用运行时进行图像的重绘/Pods-01-使用运行时进行图像的重绘-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D64FDD9890CCB7177E6096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-01-使用运行时进行图像的重绘/Pods-01-使用运行时进行图像的重绘-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8725A372DB0EA3F7157FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93FF67B41D73F3AF0054B15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FF67C31D73F3AF0054B15F /* ViewController.m in Sources */,
+				93FF67C01D73F3AF0054B15F /* AppDelegate.m in Sources */,
+				93FF67D71D7412BF0054B15F /* Person.m in Sources */,
+				93FF67BD1D73F3AF0054B15F /* main.m in Sources */,
+				93FF67D41D73F4140054B15F /* UIImageView+Hack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93FF67C41D73F3AF0054B15F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FF67C51D73F3AF0054B15F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93FF67C91D73F3AF0054B15F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FF67CA1D73F3AF0054B15F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93FF67CD1D73F3AF0054B15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93FF67CE1D73F3AF0054B15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93FF67D01D73F3AF0054B15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE149FFA59FD6A48AA400149 /* Pods-01-使用运行时进行图像的重绘.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-使用运行时进行图像的重绘/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.rujianbin.-1-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93FF67D11D73F3AF0054B15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481D71B2B7A166584E518FC4 /* Pods-01-使用运行时进行图像的重绘.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "01-使用运行时进行图像的重绘/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.rujianbin.-1-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93FF67B31D73F3AF0054B15F /* Build configuration list for PBXProject "01-使用运行时进行图像的重绘" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FF67CD1D73F3AF0054B15F /* Debug */,
+				93FF67CE1D73F3AF0054B15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93FF67CF1D73F3AF0054B15F /* Build configuration list for PBXNativeTarget "01-使用运行时进行图像的重绘" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FF67D01D73F3AF0054B15F /* Debug */,
+				93FF67D11D73F3AF0054B15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93FF67B01D73F3AF0054B15F /* Project object */;
+}

@@ -29,4 +29,56 @@
     
 }
 
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+
+                     
+    
+}
+
+
+- (void)test {
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"111");
+    });
+    
+    
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"2");
+    });
+    
+    
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"333");
+    });
+    
+    
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    
+    NSLog(@"555");
+    
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"666");
+    });
+    
+    
+    dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"7777");
+    });
+    
+    
+    NSLog(@"9090909");
+}
+
+
+
 @end

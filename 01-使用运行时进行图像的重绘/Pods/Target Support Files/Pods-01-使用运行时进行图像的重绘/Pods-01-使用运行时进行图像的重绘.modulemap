@@ -1,0 +1,6 @@
+framework module Pods_01_____________ {
+  umbrella header "Pods-01-使用运行时进行图像的重绘-umbrella.h"
+
+  export *
+  module * { export * }
+}
