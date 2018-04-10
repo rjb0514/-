@@ -8,19 +8,61 @@
 
 #import "ViewController.h"
 
-#import "SocietyViewController.h"
-#import "TopViewController.h"
-#import "HotViewController.h"
 
-/*有很多控制器的时候交给一个大的控制器管理
-    1.导航控制器  UitabBar
- 父子控制器的本质：搞一个控制器容器，管理多个子控制器
+static int sum = 20;
+// 宏的命名规范: 都是以项目前缀开头 ，以key结尾
+#define RJBAccoun  @"减肥的索拉卡解放路口打手机临汾就放大垃圾费倒垃圾及的垃圾费垃圾浪费静安寺冷风机的撒家乐福"
+//苹果把常用的字符串定义为const
+
+
+
+
+/*
+ 1.常用的字符串定义为宏
+ 2.常用的代码用 宏
  
- 模仿 uitabBar控制器
-    任何控制器 都可以是一个容器控制器
+ const
+ 1.苹果推介我们使用const （当有字符串常量的时候）
+ 2.const 与 宏的区别
+    1.在编译时刻 宏:是预编译  const:在编译的时候
+    2.编译检查  宏:不会检查错误  cons: 会做编译检查
+    3.宏：可以定义代码
+    4.宏的坏处： 编译时间过长   const只编译一次  大大减少编译时间  因此常用字符串常量用const
  
- 父子控制器的开发：
-    a控制器的view添加到B控制器的view上 就可以
+
+ 
+ const:
+    1.仅仅用来修饰右边的变量（只能修饰变量： 基本变量，指针变量，对象变量）
+    2.用const修饰的变量 表示只读变量 而不是常量
+ 
+ 在开发中的使用
+    1.定义一个只读全局变量
+    2.方法中定义只读参数
+ 
+ */
+
+
+/*
+ static作用
+ 1.修饰局部变量
+    *延长局部变量的生命周期  只要程序运行，局部变量就会一直存在
+    *局部变量只会分配一次内存 为什么?用static修饰的代码，只会在程序一启动就会执行，以后就不会执行了
+ 2.修饰全局变量
+    *只会修改全局变量的作用域，表示只能在当前文件中使用
+ 
+ */
+
+/*
+ extern
+    1.声明一个全局变量，不能定义变量
+    注意：extern修饰的变量不能初始化
+ 
+ */
+
+
+/*
+ static  与 const 连用
+    表示 静态的全部只读变量
  
  */
 
@@ -30,11 +72,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) TopViewController *topVC;
-
-@property (nonatomic, strong) HotViewController *hotVC;
-
-@property (nonatomic, strong) SocietyViewController *societyVC;
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @end
@@ -48,121 +85,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
 
-    UILabel *name = [[UILabel alloc] init];
     
-    name.text = @"zhaojianping";
+    //宏不会增加内存  但是左边的指针变量会增加内存
+    NSString *str = RJBAccoun;
+    NSString *str1 = RJBAccoun;
     
-    name.textColor = [UIColor blackColor];
-    
-    [name sizeToFit];
-    
-    [self.view addSubview:name];
-    
-    name.center = self.view.center;
+    NSLog(@"%p",str);
+    NSLog(@"%p",str1);
     
     
     
-    
-}
 
-//社会
-- (IBAction)socityButton:(UIButton *)sender {
-    
-//    SocietyViewController *VC = [[SocietyViewController alloc] init];
-//    
-//    VC.view.backgroundColor = [UIColor greenColor];
-//    VC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-// 
-//    
-//    [self.view addSubview:VC.view];
-    
-    [self.contentView addSubview:self.societyVC.view];
-    
-    [self.topVC.view removeFromSuperview];
-    [self.hotVC.view removeFromSuperview];
-}
-
-
-//头条
-- (IBAction)topButton:(UIButton *)sender {
-    
-//    TopViewController *VC = [[TopViewController alloc] init];
-//    
-//    VC.view.backgroundColor = [UIColor redColor];
-//    VC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-//    
-//    
-//    [self.view addSubview:VC.view];
-    
-    [self.contentView addSubview:self.topVC.view];
-    
-    [self.societyVC.view removeFromSuperview];
-    [self.hotVC.view removeFromSuperview];
-}
-
-
-//热点
-- (IBAction)hotButton:(UIButton *)sender {
-    
-//    HotViewController *VC = [[HotViewController alloc] init];
-//    
-//    VC.view.backgroundColor = [UIColor yellowColor];
-//    VC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-//    
-//    
-//    [self.view addSubview:VC.view];
-    
-    [self.contentView addSubview:self.hotVC.view];
-    
-    [self.topVC.view removeFromSuperview];
-    [self.societyVC.view removeFromSuperview];
-}
-
-
-/*
- 存在的问题：
-    1.每次都需要创建控制器
-    2.每次都会添加界面，只是想显示当前的view
  
- */
-
-
-#pragma mark - lazy
-- (HotViewController *)hotVC {
-    if (!_hotVC) {
-        _hotVC = [[HotViewController alloc] init];
-        
-        _hotVC.view.backgroundColor = [UIColor yellowColor];
-//        _hotVC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-        
-    }
     
-    return _hotVC;
+    
 }
 
-- (SocietyViewController *)societyVC {
-    if (!_societyVC) {
-        _societyVC = [[SocietyViewController alloc] init];
-        
-        _societyVC.view.backgroundColor = [UIColor greenColor];
-//        _societyVC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-        
-    }
-    
-    return _societyVC;
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    static int num = 20;
+    num++;
 }
 
-- (TopViewController *)topVC {
-    if (!_topVC) {
-        _topVC = [[TopViewController alloc] init];
-        
-        _topVC.view.backgroundColor = [UIColor redColor];
-//        _topVC.view.frame = CGRectMake(0, 64, RJBScreenW, RJBScreenH);
-        
-    }
-    
-    return _topVC;
-}
+
+
 
 @end
